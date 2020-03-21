@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51ac69fe-2101-4f58-8459-04e71e0623da" name="Default Changelist" comment="">
+    <list default="true" id="51ac69fe-2101-4f58-8459-04e71e0623da" name="Default Changelist" comment="Созданы вспомогательный класс, методы и тесты по созданию нового контакта">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +16,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+            <state relative-caret-position="238">
+              <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
               <folding>
                 <element signature="e#24#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_add_contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#28#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -50,6 +72,8 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/group.py" />
+        <option value="$PROJECT_DIR$/contact.py" />
+        <option value="$PROJECT_DIR$/test_add_contact.py" />
         <option value="$PROJECT_DIR$/test_add_group.py" />
       </list>
     </option>
@@ -97,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_add_contact.py">
     <configuration name="Unittests in test_add_group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python_training2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +136,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_add_group.TestAddGroup" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_add_contact.TestAddContact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,7 +147,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_group.TestAddGroup&quot;" />
+      <option name="_new_target" value="&quot;test_add_contact.TestAddContact&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_add_contact.TestAddContact.test_add_empty_contact" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_training2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_contact.TestAddContact.test_add_empty_contact&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -142,7 +181,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_add_group.TestAddGroup.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python_training2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,16 +192,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_group.TestAddGroup.test_add_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_add_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.Unittests in test_add_group.py" />
         <item itemvalue="Python tests.pytest for test_add_group.TestAddGroup.test_add_empty_group" />
-        <item itemvalue="Python tests.pytest for test_add_group.TestAddGroup.test_add_group" />
-        <item itemvalue="Python tests.pytest for test_add_group.TestAddGroup" />
+        <item itemvalue="Python tests.pytest for test_add_contact.TestAddContact.test_add_empty_contact" />
+        <item itemvalue="Python tests.pytest for test_add_contact.TestAddContact" />
       </list>
     </recent_temporary>
   </component>
@@ -212,24 +252,46 @@
       <option name="project" value="LOCAL" />
       <updated>1584793843081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Созданы вспомогательный класс, методы и тесты по созданию нового контакта">
+      <created>1584801769521</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584801769521</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_add_group_py - 2020.03.21 at 13h 06m 46s.xml">
-      <configuration name="Unittests in test_add_group.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_add_contact_TestAddContact_test_add_contact - 2020.03.21 at 17h 21m 34s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact.test_add_contact" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_add_group_py - 2020.03.21 at 13h 08m 12s.xml">
-      <configuration name="Unittests in test_add_group.py" configurationId="tests" />
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 27m 01s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_group_TestAddGroup - 2020.03.21 at 13h 09m 15s.xml">
-      <configuration name="pytest for test_add_group.TestAddGroup" configurationId="tests" />
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 27m 25s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_group_TestAddGroup - 2020.03.21 at 13h 09m 51s.xml">
-      <configuration name="pytest for test_add_group.TestAddGroup" configurationId="tests" />
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 28m 29s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_add_group_TestAddGroup_test_add_group - 2020.03.21 at 15h 37m 30s.xml">
-      <configuration name="pytest for test_add_group.TestAddGroup.test_add_group" configurationId="tests" />
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 30m 48s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 31m 21s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_add_contact_TestAddContact_test_add_contact - 2020.03.21 at 17h 36m 23s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact.test_add_contact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_add_contact_TestAddContact - 2020.03.21 at 17h 37m 55s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_add_contact_TestAddContact_test_add_empty_contact - 2020.03.21 at 17h 40m 55s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact.test_add_empty_contact" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_add_contact_TestAddContact_test_add_empty_contact - 2020.03.21 at 17h 41m 19s.xml">
+      <configuration name="pytest for test_add_contact.TestAddContact.test_add_empty_contact" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -242,7 +304,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -261,7 +323,8 @@
     <MESSAGE value="Сохранена запись сценария из рекордера по созданию новой группы" />
     <MESSAGE value="Созданы вспомогательные методы по сценарию создания группы" />
     <MESSAGE value="Реализована передача параметров в некоторые вспомогательные методы. Создан тест по созданию группы с пустыми полями" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализована передача параметров в некоторые вспомогательные методы. Создан тест по созданию группы с пустыми полями" />
+    <MESSAGE value="Созданы вспомогательный класс, методы и тесты по созданию нового контакта" />
+    <option name="LAST_COMMIT_MESSAGE" value="Созданы вспомогательный класс, методы и тесты по созданию нового контакта" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -281,10 +344,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_add_contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#28#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_add_group.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="82" lean-forward="true" selection-start-line="17" selection-start-column="82" selection-end-line="17" selection-end-column="82" />
+        <state relative-caret-position="238">
+          <caret line="20" column="50" lean-forward="true" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
           <folding>
             <element signature="e#24#54#0" expanded="true" />
           </folding>
