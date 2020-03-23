@@ -13,9 +13,8 @@ class TestAddContact(unittest.TestCase):
         self.wd.implicitly_wait(30)
 
     def test_add_contact(self):
-        wd = self.wd
-        self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, Contact(firstname="first name", middlename="middle name", lastname="lasr name",
+        self.login(username="admin", password="secret")
+        self.create_contact(Contact(firstname="first name", middlename="middle name", lastname="lasr name",
                                         nickname="nickname", path_to_photo="C:\\Users\\Asus\\Desktop\\test_image.jfif",
                                         title="title", company="company",
                                         address="address", home="home telephone", mobile="mobile telephone",
@@ -23,21 +22,22 @@ class TestAddContact(unittest.TestCase):
                                         email3="e-mail3", homepage="homepage", bday="5", bmonth="February",
                                         byear="1990", aday="14", amonth="June", ayear="2000", new_group="[none]",
                                         address2="secondary address", phone2="secondary home", notes="secondary notes"))
-        self.logout(wd)
+        self.logout()
 
     def test_add_empty_contact(self):
-        wd = self.wd
-        self.login(wd, username="admin", password="secret")
-        self.create_contact(wd, Contact(firstname="", middlename="", lastname="", nickname="", path_to_photo="",
+        self.login(username="admin", password="secret")
+        self.create_contact(Contact(firstname="", middlename="", lastname="", nickname="", path_to_photo="",
                                         title="", company="", address="", home="", mobile="", work="", fax="", email="",
                                         email2="", email3="", homepage="", bday="", bmonth="-", byear="", aday="",
                                         amonth="-", ayear="", new_group="", address2="", phone2="", notes=""))
-        self.logout(wd)
+        self.logout()
 
-    def logout(self, wd):
+    def logout(self):
+        wd = self.wd
         wd.find_element_by_link_text("Logout").click()
 
-    def create_contact(self, wd, contact):
+    def create_contact(self, contact):
+        wd = self.wd
         wd.find_element_by_link_text("add new").click()
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
@@ -117,8 +117,9 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("notes").send_keys(contact.notes)
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def login(self, wd, username, password):
-        self.open_home_page(wd)
+    def login(self, username, password):
+        wd = self.wd
+        self.open_home_page()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
@@ -126,7 +127,8 @@ class TestAddContact(unittest.TestCase):
         wd.find_element_by_name("pass").send_keys(password)
         wd.find_element_by_xpath("//input[@value='Login']").click()
 
-    def open_home_page(self, wd):
+    def open_home_page(self):
+        wd = self.wd
         wd.get("http://localhost/addressbook/")
 
     def is_element_present(self, how, what):
