@@ -9,6 +9,11 @@ class ContactHelper:
     def create(self, contact):
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
+        wd.fill_form_contact(contact)
+        wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+
+    def fill_contact_form(self, contact):
+        wd = self.app.wd
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys(contact.firstname)
@@ -74,8 +79,9 @@ class ContactHelper:
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(contact.ayear)
-        wd.find_element_by_name("new_group").click()
-        wd.find_element_by_xpath("//option[@value='%s']" % contact.new_group).click()
+        if contact.new_group is not None:
+            wd.find_element_by_name("new_group").click()
+            wd.find_element_by_xpath("//option[@value='%s']" % contact.new_group).click()
         wd.find_element_by_name("address2").click()
         wd.find_element_by_name("address2").clear()
         wd.find_element_by_name("address2").send_keys(contact.address2)
@@ -85,7 +91,6 @@ class ContactHelper:
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact.notes)
-        wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -95,4 +100,15 @@ class ContactHelper:
         # submit deletion
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to_alert().accept()
+        self.app.open_home_page()
+
+    def change_first_contact(self, contact):
+        wd = self.app.wd
+        self.app.open_home_page()
+        # select first group
+        wd.find_element_by_name("selected[]").click()
+        # submit edit
+        wd.find_element_by_xpath("//img[@alt='Edit']").click()
+        self.fill_contact_form(contact)
+        wd.find_element_by_name("update").click()
         self.app.open_home_page()
